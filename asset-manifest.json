@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/p3p-guide/static/css/main.19c10e15.css",
+    "main.js": "/p3p-guide/static/js/main.37fe6ed6.js",
+    "static/media/fool.png": "/p3p-guide/static/media/fool.ba76841a82bc53ff3f6b.png",
+    "static/media/p3pLogo.png": "/p3p-guide/static/media/p3pLogo.a13158e4faadfd3a3c80.png",
+    "index.html": "/p3p-guide/index.html",
+    "main.19c10e15.css.map": "/p3p-guide/static/css/main.19c10e15.css.map",
+    "main.37fe6ed6.js.map": "/p3p-guide/static/js/main.37fe6ed6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19c10e15.css",
+    "static/js/main.37fe6ed6.js"
+  ]
+}
