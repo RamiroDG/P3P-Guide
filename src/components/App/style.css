@@ -1,0 +1,69 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightskyblue;
+}
+
+.navbar .toggle {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.navbar .toggle input[type=checkbox] {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(1.5);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.navbar .logo img {
+    width: 6rem;
+    position: relative;
+    padding: 1rem;
+}
+
+.femc .navbar {
+    background-color: pink;
+}
+
+*.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+.slinkcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+.slinkcard {
+    /* display: flex; */
+    width: 15%;
+    background-color: blue;
+    margin: 1rem;
+}
+
+.slinkcard img {
+    width: 100%;
+    text-align: center;
+}
+
+.femc .slinkcard {
+    background-color: violet;
+}
+
+.slinkcard .textbox {
+    background-color: rgba(0,0,0,1);
+    color: whitesmoke;
+}
