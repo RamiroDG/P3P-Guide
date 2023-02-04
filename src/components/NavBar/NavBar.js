@@ -3,7 +3,7 @@ import logo from "../../imgs/p3pLogo.png";
 
 const NavBar = ({toggleRoute}) => {
     return(
-        <div className="navbar">
+        <header className="navbar">
             <div className="logo">
                 <img src={logo} alt="P3P Logo"></img>
             </div>
@@ -13,7 +13,7 @@ const NavBar = ({toggleRoute}) => {
                     <input type="checkbox" defaultChecked={false} onChange={toggleRoute}/>
                 </label>
             </div>
-        </div>
+        </header>
     )
 }
 
