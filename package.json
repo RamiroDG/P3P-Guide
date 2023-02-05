@@ -2,7 +2,7 @@
   "name": "p3pguide",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ramirodg.github.io/p3p-guide",
+  "homepage": "https://ramirodg.github.io/P3P-Guide",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
