@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/p3p-guide/static/css/main.19c10e15.css",
-    "main.js": "/p3p-guide/static/js/main.37fe6ed6.js",
-    "static/media/fool.png": "/p3p-guide/static/media/fool.ba76841a82bc53ff3f6b.png",
+    "main.css": "/p3p-guide/static/css/main.9a170104.css",
+    "main.js": "/p3p-guide/static/js/main.06081e5d.js",
+    "static/media/mitsuru2.png": "/p3p-guide/static/media/mitsuru2.931337edaa425b527c46.png",
     "static/media/p3pLogo.png": "/p3p-guide/static/media/p3pLogo.a13158e4faadfd3a3c80.png",
     "index.html": "/p3p-guide/index.html",
-    "main.19c10e15.css.map": "/p3p-guide/static/css/main.19c10e15.css.map",
-    "main.37fe6ed6.js.map": "/p3p-guide/static/js/main.37fe6ed6.js.map"
+    "main.9a170104.css.map": "/p3p-guide/static/css/main.9a170104.css.map",
+    "main.06081e5d.js.map": "/p3p-guide/static/js/main.06081e5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.19c10e15.css",
-    "static/js/main.37fe6ed6.js"
+    "static/css/main.9a170104.css",
+    "static/js/main.06081e5d.js"
   ]
 }
