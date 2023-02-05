@@ -79,3 +79,7 @@ body {
     margin: 10px;
 }
 
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
