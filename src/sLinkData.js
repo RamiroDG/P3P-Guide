@@ -4,23 +4,63 @@ const sLinkData = [
     {
         name:"Mitsuru Kirijo",
         arcana:"Empress",
-        route:"fm",
+        route:"m",
         sprite: mitsuru,
         guide: {
             unlock:"Rank six Academics (Genius) + 1st place in an exam. Starts 21/11 -> Tuesday, Thursday and Saturday.",
             location:"1°st floor Faculty Office",
             gifts:"Goggle-Eye Idol / Japanese Doll",
             ranks: [
-                "Automatic",
-                "Say anything",
-                "Ask her to treat you -> Does that make you happy -> anything -> Agree to forget about it",
-                "Did something happen? -> It's the result of love -> anything",
-                "I'm glad you enjoyed it -> A motorcycle? -> Let's go for a ride",
-                "Can I get a book for you > That's news to me? > You have to reconsider",
-                "Let's do it",
-                "Anything -> Anything -> Say something to the guy -> Anything",
-                "That makes me happy",
-                "Automatic"
+                [
+                    {
+                        q:"Please tell me what the etiquette here is. Are there any customs I need to follow...?",
+                        a: ["All options are correct"]
+                    },
+                    {
+                        q:"...Does that make me strange?",
+                        a: ["All options are correct"]
+                    }
+                ],
+                [
+                    {
+                        q:"> Mitsuru seems nervous.",
+                        a:[
+                            "Is this your first time?  (+2/+1)",
+                            "Can you eat with your hands?  (+0/+0)"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        q:"> Mitsuru seems dejected.",
+                        a:[
+                            "Treat her to takoyaki  (+0/+0)",
+                            "Ask her to treat you  (+2/+1)"
+                        ]
+                    },
+                    {
+                        q:"Perhaps he's just maturing...",
+                        a:[
+                            "Does that make you sad?  (+0/+0)",
+                            "Does that make you happy?  (+3/+2)"
+                        ]
+                    },
+                    {
+                        q:"I can't explain why, though...",
+                        a:[
+                            "Maybe you're in love.  (+2/+1)",
+                            "Maybe you're anxious. (+2/+1)",
+                            "Maybe you're sad.  (+0/+0)"
+                        ]
+                    },
+                    {
+                        q:"Sorry for subjecting you to my incoherent ramblings... Please forget what I just said.",
+                        a:[
+                            "Cheer her on  (+0/+0)",
+                            "Agree to forget about it  (+2/+1)"
+                        ]
+                    }
+                ]
             ],
             reward:"Alilat"
         }
@@ -28,7 +68,7 @@ const sLinkData = [
     {
         name:"Maiko Oohashi",
         arcana:"Hanged",
-        route:"fm",
+        route:"m",
         sprite:"",
         guide: {
             unlock:"",
@@ -73,7 +113,7 @@ const sLinkData = [
     {
         name:"Fuuka Yamagishi",
         arcana:"Priestess",
-        route:"f",
+        route:"m",
         sprite:"",
         guide: {
             unlock:"Rank 2 Courage (Ordinary)",

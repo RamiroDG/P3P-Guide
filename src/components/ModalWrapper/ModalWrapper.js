@@ -39,10 +39,26 @@ const ModalWrapper = ({open, hc, person}) => {
                 </Typography>
                 <hr></hr>
                 {guide?.ranks.map((rank,num)=>{
-                    return <Typography>
-                        {"Rank " + num + " > " + (num+1)+": "
-                        + rank}
-                    </Typography>
+                    return <div className="box">
+                        <Typography variant="h5">
+                            {"Rank "+num+" > "+(num+1)}
+                        </Typography>
+                        <hr style={{margin:"10px"}}></hr>
+                        {rank.map((qa)=>{
+                            return <div>
+                                <Typography variant="h5" mt={3}>
+                                    {qa.q}
+                                </Typography>
+                                {qa.a.map(a=>{
+                                    return <Typography variant="body1">
+                                        {a}
+                                    </Typography>
+                                })}
+                            </div>                        
+                        })}
+                    </div>
+                    
+                    
                 })} 
                 <br></br> 
                 <Button onClick={hc} variant="contained">Close</Button>              
