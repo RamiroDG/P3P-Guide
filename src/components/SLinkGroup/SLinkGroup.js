@@ -1,59 +1,27 @@
 import React, { Component } from "react";
 import SLinkCard from "../SLinkCard/SLinkCard";
-import ModalWrapper from "../ModalWrapper/ModalWrapper";
+import SLinkPage from "../SLinkPage/SLinkPage";
 
 
 class SLinkGroup extends Component {
     constructor() {
         super();
         this.state = {
-            open:false,
             person: {}
         }
     }
 
-    handleOpen = () => this.setState({open:true});
-    handleClose = () => {
-        this.setState({
-            open:false,
-            person:{}
-        });
-    };
-
     setPerson = (person) => {
         this.setState({person:person});
-        this.handleOpen();
+        this.props.toggleShow(true);
     }
     
     render() {
-        const { sLinks } = this.props;
-        const { open, person } = this.state;
-        return(
-            <> 
-                {/* <Modal
-                open={open}
-                onClose={this.handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-                >
-                    <Box sx={style}>
-                        <Typography id="social-link-info" variant="h6" component="h2">
-                            {person?.name + " - " + person?.arcana}
-                        </Typography>
-                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            {person?.unlock}
-                        </Typography>
-                        <Typography>
-                            {person?.location}
-                        </Typography>
-                        
-                    </Box>
-                </Modal> */}
-                <ModalWrapper 
-                open={open}
-                hc={this.handleClose}
-                person={person}
-                />
+        const { sLinks, show } = this.props;
+        const { person } = this.state;
+
+        if(!show) {
+            return(
                 <div className="cardContainer columns is-centered is-variable is-3 is-mobile"> {
                     sLinks.map((slink) => {
                         return(
@@ -68,8 +36,15 @@ class SLinkGroup extends Component {
                         )
                     })
                 } </div>
-            </>
-        )
+            )
+        } else {
+            return(
+                <div className="sLinkPageContainer">
+                    <SLinkPage person={person} />
+                </div>       
+            )
+            
+        }
     }
 };
 

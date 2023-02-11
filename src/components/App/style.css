@@ -21,6 +21,13 @@
     color: rgba(255,195,71,1);
 }
 
+.navbar .closeButton {
+    background-color: crimson;
+    color: white;
+    border-color: black;
+    margin-right: 20px;
+}
+
 *.unselectable {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -42,12 +49,10 @@
 html,body {
     margin: 0;
     padding: 0;
-}
-
-body {
+    height: 100%;
     background-color: rgba(36,149,255,1);
-    height: 100vh;
-    width: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .femc{
@@ -55,7 +60,7 @@ body {
 }
 
 .card {
-    background-color: rgb(108,177,255);
+    background-color: #6cb1ff;
     color: rgb(2,97,189);
 }
 
@@ -82,4 +87,18 @@ body {
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
+}
+
+.sLinkPageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sLinkPage {
+    background-color: rgb(108,177,255);
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
 }

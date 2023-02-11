@@ -10,7 +10,7 @@ class App extends Component {
       this.state = {
           femc:false,
           sLinks:sLinksData,
-          texto:''
+          show:false
       }
   };
 
@@ -20,26 +20,28 @@ class App extends Component {
     body.classList.toggle("femc");
   }
 
+  show = (status) => this.setState({show:status});
+
   getSLinks(){
     const {sLinks, femc} = this.state;
     if(femc){
       return sLinks.filter((sLink) => {
-        return sLink.route.includes("f");
+        return sLink.route === "f";
       })
     } else {
       return sLinks.filter((sLink) => {
-        return sLink.route.includes("m");
+        return sLink.route === "m";
       })
     }
   }
 
   render(){
     const filteredSLinks = this.getSLinks();
+    const { show } = this.state;
     return(
-      <div>
-        <NavBar toggleRoute={this.toggleRoute}/>        
-        <SLinkGroup sLinks={filteredSLinks} />
-        {/* <Modale />  */}
+      <div className="fondo">
+        <NavBar toggleRoute={this.toggleRoute} show={show} toggleShow={this.show}/>        
+        <SLinkGroup sLinks={filteredSLinks} show={show} toggleShow={this.show} />
       </div>
     );
   }
