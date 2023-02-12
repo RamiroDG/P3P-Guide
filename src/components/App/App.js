@@ -26,11 +26,11 @@ class App extends Component {
     const {sLinks, femc} = this.state;
     if(femc){
       return sLinks.filter((sLink) => {
-        return sLink.route === "f";
+        return sLink.route.includes("f");
       })
     } else {
       return sLinks.filter((sLink) => {
-        return sLink.route === "m";
+        return sLink.route.includes("m");
       })
     }
   }

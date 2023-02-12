@@ -4,7 +4,7 @@ import React from "react";
 const SLinkPage = ({ person }) => {
     const guide = person.guide;
     return <div className="sLinkPage">
-        <div className="box">
+        <div className="box" >
             <Typography id="social-link-info" variant="h4" component="h2">
                 {person?.name + " - " + person?.arcana}
             </Typography>
@@ -21,19 +21,18 @@ const SLinkPage = ({ person }) => {
                 {guide?.reward}
             </Typography>
         </div>
-        <hr style={{backgroundColor:"black"}}></hr>
         {guide?.ranks.map((rank,num)=>{
             return <div className="box">
-                <Typography variant="h5">
-                    {"Rank "+num+" > "+(num+1)}
+                
+                <Typography variant="h5" textAlign={"center"}>
+                    <span className="rankNumber">{"Rank "+num+" => "+(num+1)}</span>
                 </Typography>
-                <hr style={{margin:"10px"}}></hr>
                 {rank.map((qa)=>{
                     return <div>
                         <Typography variant="h5" mt={3}>
                             {qa.q}
                         </Typography>
-                        {qa.a.map(a=>{
+                        {qa.a.map((a,n)=>{
                             return <Typography variant="body1">
                                 {a}
                             </Typography>

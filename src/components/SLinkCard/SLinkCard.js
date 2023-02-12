@@ -16,8 +16,7 @@ const SLinkCard = ({arcana, name, sprite, guide, setPerson}) => {
                         <strong>
                             {arcana}
                         </strong>
-                    </p>
-                    <p>
+                        <br></br>
                         {name}
                     </p>
                 </div>

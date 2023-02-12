@@ -1,4 +1,21 @@
-import mitsuru from "./imgs/imgs/mitsuru2.png"
+import mitsuru from "./imgs/imgs/mitsuru.png"
+import maiko from "./imgs/imgs/maiko.png"
+import mutatsu from "./imgs/imgs/mutatsu.png"
+import aigis from "./imgs/imgs/aigis.png"
+import akinari from "./imgs/imgs/akinari.png"
+import bebe from "./imgs/imgs/bebe.png"
+import bunkichi from "./imgs/imgs/bunkichi.png"
+import chihiro from "./imgs/imgs/chihiro.png"
+import fuuka from "./imgs/imgs/fuuka.png"
+import hidetoshi from "./imgs/imgs/hidetoshi.png"
+import kasushi from "./imgs/imgs/kasushi.png"
+import keisuke from "./imgs/imgs/keisuke.png"
+import kenji from "./imgs/imgs/kenji.png"
+import mamoru from "./imgs/imgs/mamoru.png"
+import nozomi from "./imgs/imgs/nozomi.png"
+import tanaka from "./imgs/imgs/tanaka.png"
+import yukari from "./imgs/imgs/yukari.png"
+import yuko from "./imgs/imgs/yuko.png"
 
 const sLinkData = [
     {
@@ -207,7 +224,7 @@ const sLinkData = [
         name:"Maiko Oohashi",
         arcana:"Hanged",
         route:"m",
-        sprite:"",
+        sprite:maiko,
         guide: {
             unlock:"",
             location:"",
@@ -382,7 +399,7 @@ const sLinkData = [
         name:"Yuko Nishiwaki",
         arcana:"Strength",
         route:"m",
-        sprite:"",
+        sprite:yuko,
         guide: {
             unlock:"",
             location:"",
@@ -591,7 +608,7 @@ const sLinkData = [
         name:"Fuuka Yamagishi",
         arcana:"Priestess",
         route:"m",
-        sprite:"",
+        sprite:fuuka,
         guide: {
             unlock:"Rank 2 Courage (Ordinary)",
             location:"2° Classroom Floor",
@@ -755,7 +772,7 @@ const sLinkData = [
         name:"Hidetoshi Odagiri",
         arcana:"Emperor",
         route:"m",
-        sprite:"",
+        sprite:hidetoshi,
         guide: {
             unlock:"",
             location:"",
@@ -887,7 +904,7 @@ const sLinkData = [
         name:"Kenji Tomochika",
         arcana:"Magician",
         route:"m",
-        sprite:"",
+        sprite:kenji,
         guide: {
             unlock:"",
             location:"",
@@ -1066,7 +1083,7 @@ const sLinkData = [
         name:"Bunkichi and Mitsuko",
         arcana:"Hierophant",
         route:"m",
-        sprite:"",
+        sprite:bunkichi,
         guide: {
             unlock:"",
             location:"",
@@ -1324,8 +1341,8 @@ const sLinkData = [
     {
         name:"Yukari Takeba",
         arcana:"Lovers",
-        route:"",
-        sprite:"",
+        route:"m",
+        sprite:yukari,
         guide: {
             unlock:"",
             location:"",
@@ -1468,10 +1485,10 @@ const sLinkData = [
         }
     },
     {
-        name:"",
-        arcana:"",
-        route:"",
-        sprite:"",
+        name:"Kazushi Miyamoto",
+        arcana:"Chariot",
+        route:"m",
+        sprite:kasushi,
         guide: {
             unlock:"",
             location:"",
@@ -1638,23 +1655,10 @@ const sLinkData = [
         }
     },
     {
-        name:"Kazushi Miyamoto",
-        arcana:"Chariot",
-        route:"m",
-        sprite:"",
-        guide: {
-            unlock:"",
-            location:"",
-            gifts:"",
-            ranks: [],
-            reward:""
-        }
-    },
-    {
         name:"Chihiro Fushimi",
         arcana:"Justice",
         route:"m",
-        sprite:"",
+        sprite:chihiro,
         guide: {
             unlock:"",
             location:"",
@@ -2051,7 +2055,7 @@ const sLinkData = [
         name:"Keisuke Hiraga",
         arcana:"Fortune",
         route:"m",
-        sprite:"",
+        sprite:keisuke,
         guide: {
             unlock:"",
             location:"",
@@ -2235,7 +2239,7 @@ const sLinkData = [
         name:"Bebe",
         arcana:"Temperance",
         route:"m",
-        sprite:"",
+        sprite:bebe,
         guide: {
             unlock:"",
             location:"",
@@ -2418,7 +2422,7 @@ const sLinkData = [
         name:"President Tanaka",
         arcana:"Devil",
         route:"m",
-        sprite:"",
+        sprite:tanaka,
         guide: {
             unlock:"",
             location:"",
@@ -2572,7 +2576,7 @@ const sLinkData = [
         name:"Mutatsu",
         arcana:"Tower",
         route:"m",
-        sprite:"",
+        sprite:mutatsu,
         guide: {
             unlock:"",
             location:"",
@@ -2734,7 +2738,7 @@ const sLinkData = [
         name:"Mamoru Hayase",
         arcana:"Star",
         route:"m",
-        sprite:"",
+        sprite:mamoru,
         guide: {
             unlock:"",
             location:"",
@@ -2957,7 +2961,7 @@ const sLinkData = [
         name:"Nozomi Suemitsu",
         arcana:"Moon",
         route:"m",
-        sprite:"",
+        sprite:nozomi,
         guide: {
             unlock:"",
             location:"",
@@ -3077,7 +3081,7 @@ const sLinkData = [
         name:"Akinari Kamiki",
         arcana:"Sun",
         route:"m",
-        sprite:"",
+        sprite:akinari,
         guide: {
             unlock:"",
             location:"",
@@ -3222,7 +3226,7 @@ const sLinkData = [
         name:"Aigis",
         arcana:"Aeon",
         route:"m",
-        sprite:"",
+        sprite:aigis,
         guide: {
             unlock:"",
             location:"",
@@ -3377,7 +3381,7 @@ const sLinkData = [
     {
         name:"Nyx Annihilation Team",
         arcana:"Judgement",
-        route:"m",
+        route:"fm",
         sprite:"",
         guide: {
             unlock:"",
